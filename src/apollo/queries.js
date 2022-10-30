@@ -8,11 +8,13 @@ const GET_ITEMS = gql`
         endCursor
       }
       nodes {
+        id
         title
         content
         featuredImage {
           node {
             sourceUrl
+            title
           }
         }
         customFields {
