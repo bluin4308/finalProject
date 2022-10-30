@@ -11,7 +11,7 @@ const Layout = () => {
         <div className="basis-4/5">
           <div className="mx-auto">
             <Header title={title} />
-            <Outlet context={[setTitle]} />
+            <Outlet context={[title, setTitle]} />
           </div>
         </div>
       </div>
