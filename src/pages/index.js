@@ -1,5 +1,5 @@
 import Layout from "./Layout";
-import ProductPage from "./ProductPage";
 import NotFoundPage from "./NotFoundPage";
+import Category from "./Category";
 
-export { Layout, ProductPage, NotFoundPage };
+export { Layout, Category, NotFoundPage };
