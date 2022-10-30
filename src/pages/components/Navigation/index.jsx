@@ -12,54 +12,60 @@ const Navigation = () => {
       <div className="mt-8 flex flex-col">
         <NavLink
           to="all"
-          className={
-            "my-2 transition hover:font-bold " +
-            (({ isActive }) => (isActive ? "font-bold" : " "))
+          className={({ isActive }) =>
+            isActive
+              ? "my-2 font-bold transition hover:font-bold"
+              : " my-2 transition hover:font-bold"
           }
         >
           All clothes
         </NavLink>
         <NavLink
           to="jeans"
-          className={
-            "my-2 transition hover:font-bold " +
-            (({ isActive }) => (isActive ? "font-bold" : " "))
+          className={({ isActive }) =>
+            isActive
+              ? "my-2 font-bold transition hover:font-bold"
+              : " my-2 transition hover:font-bold"
           }
         >
           Jeans
         </NavLink>
         <NavLink
           to="jackets"
-          className={
-            "my-2 transition hover:font-bold " +
-            (({ isActive }) => (isActive ? "font-bold" : " "))
+          className={({ isActive }) =>
+            isActive
+              ? "my-2 font-bold transition hover:font-bold"
+              : " my-2 transition hover:font-bold"
           }
         >
           Jackets
         </NavLink>
         <NavLink
           to="sale"
-          className={
-            "my-2 transition hover:font-bold " +
-            (({ isActive }) => (isActive ? "font-bold" : " "))
+          className={({ isActive }) =>
+            isActive
+              ? "my-2 font-bold transition hover:font-bold"
+              : " my-2 transition hover:font-bold"
           }
         >
           Sale
         </NavLink>
         <NavLink
           to="new"
-          className={
-            "my-4 transition hover:font-bold " +
-            (({ isActive }) => (isActive ? "font-bold" : " "))
+          className={({ isActive }) =>
+            isActive
+              ? "my-2 font-bold transition hover:font-bold"
+              : " my-2 transition hover:font-bold"
           }
         >
           New
         </NavLink>
         <NavLink
           to=""
-          className={
-            "my-4 transition hover:font-bold " +
-            (({ isActive }) => (isActive ? "font-bold" : " "))
+          className={({ isActive }) =>
+            isActive
+              ? "my-2 font-bold transition hover:font-bold"
+              : " my-2 transition hover:font-bold"
           }
         ></NavLink>
       </div>
